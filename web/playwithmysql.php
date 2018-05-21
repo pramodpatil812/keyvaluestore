@@ -14,6 +14,7 @@ $m = null;
 
 try {
     $client = new PDO('mysql:dbname=kvstore;host=127.0.0.1;port=3306', 'root', '123456');
+    $slave = new PDO('mysql:dbname=kvstore;host=127.0.0.1;port=3306', 'root', '123456');
 }
 catch(PDOException $exception) {
     die("Connection failed.".$exception->getMessage().", code:".$exception->getCode());
@@ -38,7 +39,7 @@ catch(Exception $e) {
 }
 
 //var_dump($m);die;
-$kvStore = new \Src\KVStoreMysql($client, $client, $m);
+$kvStore = new \Src\KVStoreMysql($client, $slave, $m);
 //var_dump($kvStore);die;
 $kvStore->put('name', 'pramod');
 $kvStore->put('city','gurgaon');
