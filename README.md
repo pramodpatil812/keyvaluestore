@@ -4,8 +4,8 @@ Implementation of key value store using redis and mysql/memcached
 <b>Prerequisites to run</b>
 
 You should have <code>composer</code> installed.<br/>
-You should have a web server running - apache or nginx.<br/>
-You should have running instance of redis, mysql and memcached server.
+You should have a web server running - <code>apache</code> or <code>nginx</code>.<br/>
+You should have running instance of <code>redis, mysql</code> and <code>memcached</code> server.
 
 <b>Steps to run</b>
 
