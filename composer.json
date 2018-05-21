@@ -1,0 +1,13 @@
+{
+  "name": "keyvaluestore",
+  "require": {
+    "predis/predis": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/",
+      "Lib\\": "lib",
+      "Tests\\": "tests/"
+    }
+  }
+}
